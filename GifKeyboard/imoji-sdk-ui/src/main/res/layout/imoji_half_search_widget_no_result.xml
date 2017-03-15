@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/imoji_half_widget_no_sticker_layout_height"
+    android:minHeight="@dimen/imoji_half_widget_no_sticker_layout_height"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <View
+            android:layout_width="@dimen/imoji_half_widget_no_sticker_layout_icon_side"
+            android:layout_height="@dimen/imoji_half_widget_no_sticker_layout_icon_side"
+            android:layout_marginBottom="@dimen/imoji_half_widget_no_sticker_layout_icon_margin_bottom"
+            android:background="@drawable/imoji_noresults_graphic_small" />
+
+        <TextView
+            android:id="@+id/replacement_view_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imoji_search_widget_no_sticker_hint"
+            android:textColor="@color/imoji_half_widget_no_sticker_layout_text"
+            android:textSize="@dimen/imoji_quarter_widget_no_sticker_layout_text" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusableInTouchMode="true">
+
+        <View
+            android:id="@+id/search_bar_back_close_view"
+            android:layout_width="@dimen/imoji_search_bar_icon_side"
+            android:layout_height="@dimen/imoji_search_bar_icon_side"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/imoji_search_bar_first_left_icon_left_marg"
+            android:layout_marginRight="@dimen/imoji_search_bar_first_left_icon_right_marg"
+            android:background="@drawable/imoji_back"
+            android:layout_centerVertical="true"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/search_bar_search_view"
+            android:layout_width="@dimen/imoji_search_bar_icon_side"
+            android:layout_height="@dimen/imoji_search_bar_icon_side"
+            android:layout_marginLeft="@dimen/imoji_search_bar_first_left_icon_left_marg"
+            android:layout_marginRight="@dimen/imoji_search_bar_second_left_icon_right_marg"
+            android:layout_toRightOf="@id/search_bar_back_close_view"
+            android:background="@drawable/imoji_search"
+            android:layout_centerVertical="true"/>
+
+        <io.imoji.sdk.grid.ui.ImojiEditText
+            android:id="@+id/search_bar_text_box"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/imoji_search_bar_icon_side"
+            android:layout_toLeftOf="@+id/search_bar_clear_view"
+            android:layout_toRightOf="@id/search_bar_search_view"
+            android:background="@null"
+            android:hint="@string/imoji_search_widget_search_box_hint"
+            android:imeOptions="actionDone"
+            android:inputType="textNoSuggestions"
+            android:maxHeight="@dimen/imoji_search_bar_icon_side"
+            android:minHeight="@dimen/imoji_search_bar_icon_side"
+            android:singleLine="true"
+            android:textColorHint="@color/search_widget_search_bar_unfocused_text_color"
+            android:textCursorDrawable="@drawable/search_bar_cursor"
+            android:textSize="@dimen/imoji_search_bar_text"
+            android:layout_centerVertical="true"/>
+
+        <View
+            android:id="@+id/search_bar_clear_view"
+            android:layout_width="@dimen/imoji_search_bar_icon_side"
+            android:layout_height="@dimen/imoji_search_bar_icon_side"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/imoji_search_bar_right_icon_right_marg"
+            android:background="@drawable/imoji_clearfield"
+            android:visibility="gone"
+            android:layout_centerVertical="true"/>
+
+        <LinearLayout
+            android:id="@+id/search_bar_action_container"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <View
+                android:id="@+id/search_bar_recent_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="4dp"
+                android:background="@drawable/imoji_android_recents"/>
+
+            <View
+                android:id="@+id/search_bar_create_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/imoji_android_create"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</ViewSwitcher>

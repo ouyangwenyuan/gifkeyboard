@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/replacement_view_text"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/imoji_quarter_widget_no_sticker_layout_height"
+    android:minHeight="@dimen/imoji_quarter_widget_no_sticker_layout_height"
+    android:textColor="@color/imoji_quarter_widget_no_sticker_layout_text"
+    android:textSize="@dimen/imoji_quarter_widget_no_sticker_layout_text"
+    android:gravity="center"
+    android:text="@string/imoji_search_widget_no_sticker_hint">
+
+</TextView>
